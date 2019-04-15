@@ -1,0 +1,128 @@
+SQL> select * from emp
+  2  ;
+
+     EMPNO ENAME      JOB              MGR HIREDATE              SAL       COMM 
+---------- ---------- --------- ---------- -------------- ---------- ---------- 
+    DEPTNO                                                                      
+----------                                                                      
+      7369 SMITH      CLERK           7902 17-12月-80            800            
+        20                                                                      
+                                                                                
+      7499 ALLEN      SALESMAN        7698 20-2月 -81           1600        300 
+        30                                                                      
+                                                                                
+      7521 WARD       SALESMAN        7698 22-2月 -81           1250        500 
+        30                                                                      
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE              SAL       COMM 
+---------- ---------- --------- ---------- -------------- ---------- ---------- 
+    DEPTNO                                                                      
+----------                                                                      
+      7566 JONES      MANAGER         7839 02-4月 -81           2975            
+        20                                                                      
+                                                                                
+      7654 MARTIN     SALESMAN        7698 28-9月 -81           1250       1400 
+        30                                                                      
+                                                                                
+      7698 BLAKE      MANAGER         7839 01-5月 -81           2850            
+        30                                                                      
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE              SAL       COMM 
+---------- ---------- --------- ---------- -------------- ---------- ---------- 
+    DEPTNO                                                                      
+----------                                                                      
+      7782 CLARK      MANAGER         7839 09-6月 -81           2450            
+        10                                                                      
+                                                                                
+      7788 SCOTT      ANALYST         7566 19-4月 -87           3000            
+        20                                                                      
+                                                                                
+      7839 KING       PRESIDENT            17-11月-81           5000            
+        10                                                                      
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE              SAL       COMM 
+---------- ---------- --------- ---------- -------------- ---------- ---------- 
+    DEPTNO                                                                      
+----------                                                                      
+      7844 TURNER     SALESMAN        7698 08-9月 -81           1500          0 
+        30                                                                      
+                                                                                
+      7876 ADAMS      CLERK           7788 23-5月 -87           1100            
+        20                                                                      
+                                                                                
+      7900 JAMES      CLERK           7698 03-12月-81            950            
+        30                                                                      
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE              SAL       COMM 
+---------- ---------- --------- ---------- -------------- ---------- ---------- 
+    DEPTNO                                                                      
+----------                                                                      
+      7902 FORD       ANALYST         7566 03-12月-81           3000            
+        20                                                                      
+                                                                                
+      7934 MILLER     CLERK           7782 23-1月 -82           1300            
+        10                                                                      
+                                                                                
+
+已选择14行。
+
+SQL> creat or replace function fun_avg(p_deptno emp.deptno%type)
+SP2-0734: 未知的命令开头 "creat or r..." - 忽略了剩余的行。
+
+SQL> create or replace function fun_avg
+  2  (p_deptno emp.deptno%type)
+  3  return emp.sal%type
+  4  as v_sal emp.sal%type;
+  5  begin
+  6  select avg(sal) into v_sal from emp where deptno=p_deptno;
+  7  return v_sal;
+  8  end;
+  9  /
+
+函数已创建。
+
+SQL> create or replace function dept_avg
+  2  (p_empno emp.empno%type)
+  3  return emp.sal%type
+  4  as
+  5  v_sal emp.sal%type;
+  6  begin
+  7  select avg(sal) into v_sal from emp where deptno=
+  8  (select deptno from emp where empno=p_empno);
+  9  return v_sal;
+ 10  end;
+ 11  /
+
+函数已创建。
+
+SQL> create or replace procedure emp_info
+  2  (min binary_integer,max binary_integer)
+  3  as
+  4  begin
+  5  for v in(select * from emp where sal between min and max)
+  6  loop
+  7  dbms_output.put_line(
+  8  v.empno||' '||v.ename||' '||v.job||' '||v.mgr||' '||v.hiredate||' '||v.sal||' '||v.comm||' '||v.deptno);
+  9  end loop;
+ 10  end;
+ 11  /
+
+过程已创建。
+
+SQL> create or replace procedure emp_sal
+  2  (p_empno emp.empno%type)
+  3  as
+  4  v_sal emp.sal%type;
+  5  begin
+  6  select sal into v_sal from emp where empno=p_empno;
+  7  dbms_output.put_line(v_sal);
+  8  end;
+  9  /
+
+过程已创建。
+
+SQL> spool off

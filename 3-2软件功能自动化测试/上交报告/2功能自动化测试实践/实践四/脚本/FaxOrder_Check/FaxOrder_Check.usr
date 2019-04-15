@@ -1,0 +1,69 @@
+[General]
+Type=Tulip
+RunType=ActiveScript
+DefaultCfg=default.cfg
+DefaultRunLogic=default.usp
+ParamRightBrace=>
+ParamLeftBrace=<
+NewFunctionHeader=1
+MinorVersion=0
+MajorVersion=6	
+DevelopTool=AQT
+
+[Actions]
+Action0=Action0\Script.mts
+Login=Action1\Script.mts
+New Order=Action2\Script.mts
+OpenOrder=Action5\Script.mts
+FaxOrder=Action6\Script.mts
+Action [Logout]=Action1\Script.mts
+
+[VuserProfiles]
+Profiles=Default Profile
+
+[CfgFiles]
+Default Profile=default.cfg
+
+[RunLogicFiles]
+Default Profile=default.usp
+
+[Rendezvous]
+
+[Transactions]
+
+[ActiveScript]
+Lang=none
+
+[TulipInfo]
+ProductName=HP Unified Functional Testing
+Version=12.01
+
+[TulipAddins]
+ActiveX=
+Database=
+File Content=
+Insight=
+Windows Applications=
+TEA=
+Windows Runtime=
+XML=
+
+[ExtraFiles]
+Test.tsp=
+Default.xls=
+Parameters.mtr=
+Action0\Script.mts=
+Action0\Resource.mtr=
+Action0\ObjectRepository.bdb=
+Action1\Script.mts=
+Action1\Resource.mtr=
+Action1\ObjectRepository.bdb=
+Action2\Script.mts=
+Action2\Resource.mtr=
+Action2\ObjectRepository.bdb=
+Action5\Script.mts=
+Action5\Resource.mtr=
+Action5\ObjectRepository.bdb=
+Action6\Script.mts=
+Action6\Resource.mtr=
+Action6\ObjectRepository.bdb=

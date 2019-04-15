@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>testreport 在线考试系统——测试计划</title>
+<link type="text/css" rel="stylesheet" href="http://localhost/testlink/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>COKID</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo" height="53" src="http://localhost/testlink/gui/themes/default/images/company_logo.png" /></div>
+<div class="doc_title"><p>在线考试系统——测试计划</p><p>详细测试报告</p></div>
+<div class="summary"><p id="prodname">项目: COKID</p>
+<p id="prodscope">项目 范围: </p>
+<p id="author">作者: admin</p>
+<p id="printedby">由TestLink打印 2017-12-26</p></div>
+<div class="pagefooter" id="copyright">2009 &copy; TestLink Community</div>
+<h1 class="general" style="page-break-before: always">内容列表</h1><div class="toc"><br><b><p style="padding-left: 20px;"><a href="#toc_1_1">1.1. 前台功能测试（学生端）</a></p></b>
+<b><p style="padding-left: 30px;"><a href="#toc_1_1_1">1.1.1. 在线考试</a></p></b>
+<p style="padding-left: 60px;"><a href="#toc_tc27">在线考试——上一题</a></p><p style="padding-left: 60px;"><a href="#toc_tc29">在线考试——下一题</a></p><p style="padding-left: 60px;"><a href="#toc_tc31">在线考试——交卷</a></p><p style="padding-left: 45px;"><a href="#toc_tc18">登陆验证</a></p><p style="padding-left: 45px;"><a href="#toc_tc21">学生注册</a></p><p style="padding-left: 45px;"><a href="#toc_tc23">成绩查询</a></p><p style="padding-left: 45px;"><a href="#toc_tc25">答题</a></p><br><b><p style="padding-left: 20px;"><a href="#toc_1_2">1.2. 后台功能测试（教师端）</a></p></b>
+<p style="padding-left: 45px;"><a href="#toc_tc33">后台功能测试——查询 考生成绩</a></p></div><p></p><a name='toc_1_1'></a>
+<h1 class='doclevel'>1.1. 测试集 : 前台功能测试（学生端）</h1>
+<a name='toc_1_1_1'></a>
+<h2 class='doclevel'>1.1.1. 测试集 : 在线考试</h2>
+<a name="toc_tc27"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">测试用例 4869-5: 在线考试——上一题</th></tr>
+<tr><td width="20%" valign="top"><span class="label">作者:</span></td><td colspan="2">admin</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">步骤动作:</span></td><td><span class="label">期望的结果:</span></td></tr><tr><td width="5">1</td><td><p>1.点击上一题按钮</p></td><td><p>1.显示上一题的内容</p></td></tr><tr><td width="20%" valign="top"><span class="label">测试方式:</span></td><td colspan="2">手工</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">最终结果:</span></td><td  colspan="2" ><b>通过</b></td></tr>
+<tr><td width="20%" valign="top">构建标识</td><td  colspan="2" >v1.0</b></td></tr>
+<tr><td width="20%" valign="top">测试者</td><td  colspan="2" >admin</b></td></tr>
+<tr><td width="20%" valign="top"><span class="label">需求</span><td colspan="2">1.4:  在线考试<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">关键字:</span><td colspan="2">&nbsp;无<br></td></tr>
+</table>
+</div>
+<a name="toc_tc29"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">测试用例 4869-6: 在线考试——下一题</th></tr>
+<tr><td width="20%" valign="top"><span class="label">作者:</span></td><td colspan="2">admin</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">步骤动作:</span></td><td><span class="label">期望的结果:</span></td></tr><tr><td width="5">1</td><td><p>1.点击下一题按钮&nbsp;</p></td><td><p>1.显示下一题的内容</p></td></tr><tr><td width="20%" valign="top"><span class="label">测试方式:</span></td><td colspan="2">手工</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">最终结果:</span></td><td  colspan="2" ><b>通过</b></td></tr>
+<tr><td width="20%" valign="top">构建标识</td><td  colspan="2" >v1.0</b></td></tr>
+<tr><td width="20%" valign="top">测试者</td><td  colspan="2" >admin</b></td></tr>
+<tr><td width="20%" valign="top"><span class="label">需求</span><td colspan="2">1.4:  在线考试<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">关键字:</span><td colspan="2">&nbsp;无<br></td></tr>
+</table>
+</div>
+<a name="toc_tc31"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">测试用例 4869-7: 在线考试——交卷</th></tr>
+<tr><td width="20%" valign="top"><span class="label">作者:</span></td><td colspan="2">admin</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">步骤动作:</span></td><td><span class="label">期望的结果:</span></td></tr><tr><td width="5">1</td><td><p>1.点击交卷按钮</p></td><td><p>1.计算考生的得分</p></td></tr><tr><td width="20%" valign="top"><span class="label">测试方式:</span></td><td colspan="2">手工</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">最终结果:</span></td><td  colspan="2" ><b>通过</b></td></tr>
+<tr><td width="20%" valign="top">构建标识</td><td  colspan="2" >v1.0</b></td></tr>
+<tr><td width="20%" valign="top">测试者</td><td  colspan="2" >admin</b></td></tr>
+<tr><td width="20%" valign="top"><span class="label">需求</span><td colspan="2">1.4:  在线考试<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">关键字:</span><td colspan="2">&nbsp;无<br></td></tr>
+</table>
+</div>
+<a name="toc_tc18"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">测试用例 4869-1: 登陆验证</th></tr>
+<tr><td width="20%" valign="top"><span class="label">作者:</span></td><td colspan="2">admin</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">步骤动作:</span></td><td><span class="label">期望的结果:</span></td></tr><tr><td width="5">1</td><td><p>1、登录用户名为空、密码不为空</p>
+<p>2、登录用户名不为空、密码为空</p>
+<p>3、输入错误的用户名或密码</p>
+<p>4、输入正确的用户名和密码</p></td><td><p>1、提示用户名或密码不能为空</p>
+<p>2、提示用户名或密码不能为空</p>
+<p>3、提示用户名或密码错误</p>
+<p>4、显示登录成功的界面</p></td></tr><tr><td width="20%" valign="top"><span class="label">测试方式:</span></td><td colspan="2">手工</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">最终结果:</span></td><td  colspan="2" ><b>通过</b></td></tr>
+<tr><td width="20%" valign="top">构建标识</td><td  colspan="2" >v1.0</b></td></tr>
+<tr><td width="20%" valign="top">测试者</td><td  colspan="2" >admin</b></td></tr>
+<tr><td width="20%" valign="top"><span class="label">需求</span><td colspan="2">1.1:  登陆验证<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">关键字:</span><td colspan="2">&nbsp;无<br></td></tr>
+</table>
+</div>
+<a name="toc_tc21"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">测试用例 4869-2: 学生注册</th></tr>
+<tr><td width="20%" valign="top"><span class="label">作者:</span></td><td colspan="2">admin</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">步骤动作:</span></td><td><span class="label">期望的结果:</span></td></tr><tr><td width="5">1</td><td><p>1.输入的任何数据项为空</p>
+<p>2.输入的密码位数少于 6 位</p></td><td><p>1.提示该项不能为空</p>
+<p>2.提示密码至少6位</p></td></tr><tr><td width="20%" valign="top"><span class="label">测试方式:</span></td><td colspan="2">手工</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">最终结果:</span></td><td  colspan="2" ><b>通过</b></td></tr>
+<tr><td width="20%" valign="top">构建标识</td><td  colspan="2" >v1.0</b></td></tr>
+<tr><td width="20%" valign="top">测试者</td><td  colspan="2" >admin</b></td></tr>
+<tr><td width="20%" valign="top"><span class="label">需求</span><td colspan="2">1.2:  学生注册<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">关键字:</span><td colspan="2">&nbsp;无<br></td></tr>
+</table>
+</div>
+<a name="toc_tc23"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">测试用例 4869-3: 成绩查询</th></tr>
+<tr><td width="20%" valign="top"><span class="label">作者:</span></td><td colspan="2">admin</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">步骤动作:</span></td><td><span class="label">期望的结果:</span></td></tr><tr><td width="5">1</td><td><p>1.点击查询成绩按钮</p></td><td><p>1.在页面中显示考生的成绩</p></td></tr><tr><td width="20%" valign="top"><span class="label">测试方式:</span></td><td colspan="2">手工</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">最终结果:</span></td><td  colspan="2" ><b>通过</b></td></tr>
+<tr><td width="20%" valign="top">构建标识</td><td  colspan="2" >v1.0</b></td></tr>
+<tr><td width="20%" valign="top">测试者</td><td  colspan="2" >admin</b></td></tr>
+<tr><td width="20%" valign="top"><span class="label">需求</span><td colspan="2">1.3:  成绩查询<br />1.5:  答题<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">关键字:</span><td colspan="2">&nbsp;无<br></td></tr>
+</table>
+</div>
+<a name="toc_tc25"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">测试用例 4869-4: 答题</th></tr>
+<tr><td width="20%" valign="top"><span class="label">作者:</span></td><td colspan="2">admin</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">步骤动作:</span></td><td><span class="label">期望的结果:</span></td></tr><tr><td width="5">1</td><td><p>1.选中正确的选项</p>
+<p>2.选中错误的选项</p></td><td><p>1.在成绩中加上该题目的分数</p>
+<p>2.成绩无变化</p></td></tr><tr><td width="20%" valign="top"><span class="label">测试方式:</span></td><td colspan="2">手工</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">最终结果:</span></td><td  colspan="2" ><b>通过</b></td></tr>
+<tr><td width="20%" valign="top">构建标识</td><td  colspan="2" >v1.0</b></td></tr>
+<tr><td width="20%" valign="top">测试者</td><td  colspan="2" >admin</b></td></tr>
+<tr><td width="20%" valign="top"><span class="label">需求</span><td colspan="2">&nbsp;无<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">关键字:</span><td colspan="2">&nbsp;无<br></td></tr>
+</table>
+</div>
+<a name='toc_1_2'></a>
+<h1 class='doclevel'>1.2. 测试集 : 后台功能测试（教师端）</h1>
+<a name="toc_tc33"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">测试用例 4869-8: 后台功能测试——查询 考生成绩</th></tr>
+<tr><td width="20%" valign="top"><span class="label">作者:</span></td><td colspan="2">admin</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">步骤动作:</span></td><td><span class="label">期望的结果:</span></td></tr><tr><td width="5">1</td><td><p>1.输入考生姓名/学号，点击查询&nbsp;</p>
+<div>2.不输入任何查询关键词，点击查询</div></td><td><p>1.显示该考生的考试成绩信息</p>
+<div>2.显示所有考生的考试成绩信息</div></td></tr><tr><td width="20%" valign="top"><span class="label">测试方式:</span></td><td colspan="2">手工</td></tr>
+<tr><td colspan="3"></td></tr><tr><td width="20%" valign="top"><span class="label">最终结果:</span></td><td  colspan="2" ><b>通过</b></td></tr>
+<tr><td width="20%" valign="top">构建标识</td><td  colspan="2" >v1.0</b></td></tr>
+<tr><td width="20%" valign="top">测试者</td><td  colspan="2" >admin</b></td></tr>
+<tr><td width="20%" valign="top"><span class="label">需求</span><td colspan="2">2.1:  查询考生成绩<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">关键字:</span><td colspan="2">&nbsp;无<br></td></tr>
+</table>
+</div>
+<h1 class="doclevel">报告和进度</h1>
+
+</body>
+</html>

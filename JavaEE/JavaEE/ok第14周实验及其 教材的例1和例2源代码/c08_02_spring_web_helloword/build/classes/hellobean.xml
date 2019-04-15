@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean name="stu1" class="com.edu.HelloBean">
+		<property name="studentName" value="张三"></property>
+		<property name="course" value="数学"></property>
+		<property name="score" value="95"></property>
+	</bean>
+	<bean name="stu2" class="com.edu.HelloBean">
+		<property name="studentName" value="李四"></property>
+		<property name="course" value="物理"></property>
+		<property name="score" value="88"></property>
+	</bean>
+	<bean name="stu3" class="com.edu.HelloBean">
+		<property name="studentName" value="王五"></property>
+		<property name="course" value="计算机"></property>
+		<property name="score" value="90"></property>
+	</bean>
+
+</beans>

@@ -1,0 +1,1110 @@
+
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="http://localhost/mantis/css/default.css" />
+	<script type="text/javascript"><!--
+		if(document.layers) {document.write("<style>td{padding:0px;}<\/style>")}
+	// --></script>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Cache-Control" content="no-cache" />
+	<meta http-equiv="Pragma-directive" content="no-cache" />
+	<meta http-equiv="Cache-Directive" content="no-cache" />
+	<meta http-equiv="Expires" content="Wed, 27 Dec 2017 01:54:39 GMT" />
+	<link rel="shortcut icon" href="/mantis/images/favicon.ico" type="image/x-icon" />
+	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: Text Search" href="http://localhost/mantis/browser_search_plugin.php?type=text" />	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: Issue Id" href="http://localhost/mantis/browser_search_plugin.php?type=id" />	<title>MantisBT</title>
+<script type="text/javascript" src="/mantis/javascript/min/common.js"></script>
+<script type="text/javascript">var loading_lang = "正在载入...";</script><script type="text/javascript" src="/mantis/javascript/min/ajax.js"></script>
+</head>
+<body>
+<br />
+<table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="3">
+		查看问题详情	</td>
+</tr>
+<tr>
+	<td class="print-spacer" colspan="6">
+		<hr size="1" width="100%" />
+	</td>
+</tr>
+<tr class="print-category">
+	<td class="print" width="16%">
+		编号:
+	</td>
+	<td class="print" width="16%">
+		分类:
+	</td>
+	<td class="print" width="16%">
+		严重性:
+	</td>
+	<td class="print" width="16%">
+		出现频率:
+	</td>
+	<td class="print" width="16%">
+		报告日期:
+	</td>
+	<td class="print" width="16%">
+		最后更新:
+	</td>
+</tr>
+<tr class="print">
+	<td class="print">
+		5	</td>
+	<td class="print">
+		[学籍管理系统] General	</td>
+	<td class="print">
+		很严重	</td>
+	<td class="print">
+		总是	</td>
+	<td class="print">
+		2017-12-27 02:44	</td>
+	<td class="print">
+		2017-12-27 02:53	</td>
+</tr>
+<tr>
+	<td class="print-spacer" colspan="6">
+		<hr size="1" width="100%" />
+	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		报告员:
+	</td>
+	<td class="print">
+		Test1	</td>
+	<td class="print-category">
+		平台:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		分派给:
+	</td>
+	<td class="print">
+		Dev1	</td>
+	<td class="print-category">
+		操作系统:
+	</td>
+	<td class="print">
+		win10	</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		优先级:
+	</td>
+	<td class="print">
+		中	</td>
+	<td class="print-category">
+		操作系统版本:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		状态:
+	</td>
+	<td class="print">
+		已解决	</td>
+	<td class="print-category">
+		产品版本:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		产品Build:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print-category">
+		处理状况:
+	</td>
+	<td class="print">
+		未处理	</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		处理方式:
+	</td>
+	<td class="print">
+		无	</td>
+	<td class="print-category">
+		&#160;
+	</td>
+	<td class="print">
+		&#160;
+	</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		估计完成时间:
+	</td>
+	<td class="print">
+		无	</td>
+	<td class="print-category">
+		修正版本:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+
+</tr>
+<tr class="print">
+	<td class="print-category">
+		&#160;
+	</td>
+	<td class="print">
+		&#160;
+	</td>
+	<td class="print-category">
+		目标版本:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr>
+	<td class="print-spacer" colspan="6">
+		<hr size="1" width="100%" />
+	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		摘要:
+	</td>
+	<td class="print" colspan="5">
+		学籍信息错误	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		描述:
+	</td>
+	<td class="print" colspan="5">
+		预期结果	备份成功<br />
+实际结果	备份失败点击取消系统退出<br />
+	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		问题重现步骤:
+	</td>
+	<td class="print" colspan="5">
+		1.运行该学籍管理软件<br />
+2.点击小学<br />
+3.选择学校四川宣化小学<br />
+4.选择学籍2013级<br />
+5.菜单栏中系统-&gt;备份<br />
+6.输入文件夹名<br />
+7.偶然出现错误点击取消退出现象<br />
+	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		附注:
+	</td>
+	<td class="print" colspan="5">
+			</td>
+</tr>
+<tr class="print">
+	<td class="print-category" valign="top">
+		附件:
+	</td>
+	<td class="print" colspan="5">
+			</td>
+</tr>
+<br />
+<table class="width100" cellspacing="1">
+<tr>
+	<td class="print" colspan="2">
+		这个问题没有注释信息	</td>
+</tr>
+
+</table>
+</table>
+
+
+<br /><br /><br clear=all style='mso-special-character:line-break; page-break-before:always'><br />
+<table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="3">
+		查看问题详情	</td>
+</tr>
+<tr>
+	<td class="print-spacer" colspan="6">
+		<hr size="1" width="100%" />
+	</td>
+</tr>
+<tr class="print-category">
+	<td class="print" width="16%">
+		编号:
+	</td>
+	<td class="print" width="16%">
+		分类:
+	</td>
+	<td class="print" width="16%">
+		严重性:
+	</td>
+	<td class="print" width="16%">
+		出现频率:
+	</td>
+	<td class="print" width="16%">
+		报告日期:
+	</td>
+	<td class="print" width="16%">
+		最后更新:
+	</td>
+</tr>
+<tr class="print">
+	<td class="print">
+		4	</td>
+	<td class="print">
+		[学籍管理系统] General	</td>
+	<td class="print">
+		很严重	</td>
+	<td class="print">
+		总是	</td>
+	<td class="print">
+		2017-12-27 02:43	</td>
+	<td class="print">
+		2017-12-27 02:53	</td>
+</tr>
+<tr>
+	<td class="print-spacer" colspan="6">
+		<hr size="1" width="100%" />
+	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		报告员:
+	</td>
+	<td class="print">
+		Test1	</td>
+	<td class="print-category">
+		平台:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		分派给:
+	</td>
+	<td class="print">
+		Dev1	</td>
+	<td class="print-category">
+		操作系统:
+	</td>
+	<td class="print">
+		win10	</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		优先级:
+	</td>
+	<td class="print">
+		中	</td>
+	<td class="print-category">
+		操作系统版本:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		状态:
+	</td>
+	<td class="print">
+		已解决	</td>
+	<td class="print-category">
+		产品版本:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		产品Build:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print-category">
+		处理状况:
+	</td>
+	<td class="print">
+		未处理	</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		处理方式:
+	</td>
+	<td class="print">
+		无	</td>
+	<td class="print-category">
+		&#160;
+	</td>
+	<td class="print">
+		&#160;
+	</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		估计完成时间:
+	</td>
+	<td class="print">
+		无	</td>
+	<td class="print-category">
+		修正版本:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+
+</tr>
+<tr class="print">
+	<td class="print-category">
+		&#160;
+	</td>
+	<td class="print">
+		&#160;
+	</td>
+	<td class="print-category">
+		目标版本:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr>
+	<td class="print-spacer" colspan="6">
+		<hr size="1" width="100%" />
+	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		摘要:
+	</td>
+	<td class="print" colspan="5">
+		拍照功能不能停止	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		描述:
+	</td>
+	<td class="print" colspan="5">
+		预期结果	点击停止按钮后恢复成启动<br />
+实际结果	仍然是停止按钮<br />
+	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		问题重现步骤:
+	</td>
+	<td class="print" colspan="5">
+		1.运行该学籍管理软件<br />
+2.点击小学<br />
+3.选择学校四川宣化小学<br />
+4.选择学籍2013级<br />
+5.点击菜单栏照相系统<br />
+6.点击启动<br />
+7.点击停止	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		附注:
+	</td>
+	<td class="print" colspan="5">
+			</td>
+</tr>
+<tr class="print">
+	<td class="print-category" valign="top">
+		附件:
+	</td>
+	<td class="print" colspan="5">
+			</td>
+</tr>
+<br />
+<table class="width100" cellspacing="1">
+<tr>
+	<td class="print" colspan="2">
+		这个问题没有注释信息	</td>
+</tr>
+
+</table>
+</table>
+
+
+<br /><br /><br clear=all style='mso-special-character:line-break; page-break-before:always'><br />
+<table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="3">
+		查看问题详情	</td>
+</tr>
+<tr>
+	<td class="print-spacer" colspan="6">
+		<hr size="1" width="100%" />
+	</td>
+</tr>
+<tr class="print-category">
+	<td class="print" width="16%">
+		编号:
+	</td>
+	<td class="print" width="16%">
+		分类:
+	</td>
+	<td class="print" width="16%">
+		严重性:
+	</td>
+	<td class="print" width="16%">
+		出现频率:
+	</td>
+	<td class="print" width="16%">
+		报告日期:
+	</td>
+	<td class="print" width="16%">
+		最后更新:
+	</td>
+</tr>
+<tr class="print">
+	<td class="print">
+		3	</td>
+	<td class="print">
+		[学籍管理系统] General	</td>
+	<td class="print">
+		很严重	</td>
+	<td class="print">
+		总是	</td>
+	<td class="print">
+		2017-12-27 02:42	</td>
+	<td class="print">
+		2017-12-27 02:53	</td>
+</tr>
+<tr>
+	<td class="print-spacer" colspan="6">
+		<hr size="1" width="100%" />
+	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		报告员:
+	</td>
+	<td class="print">
+		Test1	</td>
+	<td class="print-category">
+		平台:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		分派给:
+	</td>
+	<td class="print">
+		Dev1	</td>
+	<td class="print-category">
+		操作系统:
+	</td>
+	<td class="print">
+		win10	</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		优先级:
+	</td>
+	<td class="print">
+		中	</td>
+	<td class="print-category">
+		操作系统版本:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		状态:
+	</td>
+	<td class="print">
+		已解决	</td>
+	<td class="print-category">
+		产品版本:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		产品Build:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print-category">
+		处理状况:
+	</td>
+	<td class="print">
+		未处理	</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		处理方式:
+	</td>
+	<td class="print">
+		无	</td>
+	<td class="print-category">
+		&#160;
+	</td>
+	<td class="print">
+		&#160;
+	</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		估计完成时间:
+	</td>
+	<td class="print">
+		无	</td>
+	<td class="print-category">
+		修正版本:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+
+</tr>
+<tr class="print">
+	<td class="print-category">
+		&#160;
+	</td>
+	<td class="print">
+		&#160;
+	</td>
+	<td class="print-category">
+		目标版本:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr>
+	<td class="print-spacer" colspan="6">
+		<hr size="1" width="100%" />
+	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		摘要:
+	</td>
+	<td class="print" colspan="5">
+		学籍信息允许重复	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		描述:
+	</td>
+	<td class="print" colspan="5">
+		预期结果	重复的数据应该被忽略<br />
+实际结果	添加了已有的学籍信息<br />
+	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		问题重现步骤:
+	</td>
+	<td class="print" colspan="5">
+		1.运行该学籍管理软件<br />
+2.点击小学<br />
+3.选择学校四川宣化小学<br />
+4.选择学籍2013级<br />
+5.点击菜单栏学籍管理<br />
+6.接收数据<br />
+	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		附注:
+	</td>
+	<td class="print" colspan="5">
+			</td>
+</tr>
+<tr class="print">
+	<td class="print-category" valign="top">
+		附件:
+	</td>
+	<td class="print" colspan="5">
+			</td>
+</tr>
+<br />
+<table class="width100" cellspacing="1">
+<tr>
+	<td class="print" colspan="2">
+		这个问题没有注释信息	</td>
+</tr>
+
+</table>
+</table>
+
+
+<br /><br /><br clear=all style='mso-special-character:line-break; page-break-before:always'><br />
+<table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="3">
+		查看问题详情	</td>
+</tr>
+<tr>
+	<td class="print-spacer" colspan="6">
+		<hr size="1" width="100%" />
+	</td>
+</tr>
+<tr class="print-category">
+	<td class="print" width="16%">
+		编号:
+	</td>
+	<td class="print" width="16%">
+		分类:
+	</td>
+	<td class="print" width="16%">
+		严重性:
+	</td>
+	<td class="print" width="16%">
+		出现频率:
+	</td>
+	<td class="print" width="16%">
+		报告日期:
+	</td>
+	<td class="print" width="16%">
+		最后更新:
+	</td>
+</tr>
+<tr class="print">
+	<td class="print">
+		2	</td>
+	<td class="print">
+		[学籍管理系统] General	</td>
+	<td class="print">
+		很严重	</td>
+	<td class="print">
+		总是	</td>
+	<td class="print">
+		2017-12-27 02:41	</td>
+	<td class="print">
+		2017-12-27 02:53	</td>
+</tr>
+<tr>
+	<td class="print-spacer" colspan="6">
+		<hr size="1" width="100%" />
+	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		报告员:
+	</td>
+	<td class="print">
+		Test1	</td>
+	<td class="print-category">
+		平台:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		分派给:
+	</td>
+	<td class="print">
+		Dev1	</td>
+	<td class="print-category">
+		操作系统:
+	</td>
+	<td class="print">
+		win10	</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		优先级:
+	</td>
+	<td class="print">
+		中	</td>
+	<td class="print-category">
+		操作系统版本:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		状态:
+	</td>
+	<td class="print">
+		已解决	</td>
+	<td class="print-category">
+		产品版本:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		产品Build:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print-category">
+		处理状况:
+	</td>
+	<td class="print">
+		未处理	</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		处理方式:
+	</td>
+	<td class="print">
+		无	</td>
+	<td class="print-category">
+		&#160;
+	</td>
+	<td class="print">
+		&#160;
+	</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		估计完成时间:
+	</td>
+	<td class="print">
+		无	</td>
+	<td class="print-category">
+		修正版本:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+
+</tr>
+<tr class="print">
+	<td class="print-category">
+		&#160;
+	</td>
+	<td class="print">
+		&#160;
+	</td>
+	<td class="print-category">
+		目标版本:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr>
+	<td class="print-spacer" colspan="6">
+		<hr size="1" width="100%" />
+	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		摘要:
+	</td>
+	<td class="print" colspan="5">
+		接收数据闪退	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		描述:
+	</td>
+	<td class="print" colspan="5">
+		预期结果	返回到学籍管理界面<br />
+实际结果	程序退出<br />
+	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		问题重现步骤:
+	</td>
+	<td class="print" colspan="5">
+		1.运行该学籍管理软件<br />
+2.点击小学<br />
+3.选择学校四川宣化小学<br />
+4.选择学籍2013级<br />
+5.点击菜单栏学籍管理<br />
+6.接收数据<br />
+7.选择文件夹<br />
+8.提示<br />
+9.点击取消或者右上角关闭<br />
+10.程序退出<br />
+	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		附注:
+	</td>
+	<td class="print" colspan="5">
+			</td>
+</tr>
+<tr class="print">
+	<td class="print-category" valign="top">
+		附件:
+	</td>
+	<td class="print" colspan="5">
+			</td>
+</tr>
+<br />
+<table class="width100" cellspacing="1">
+<tr>
+	<td class="print" colspan="2">
+		这个问题没有注释信息	</td>
+</tr>
+
+</table>
+</table>
+
+
+<br /><br /><br clear=all style='mso-special-character:line-break; page-break-before:always'><br />
+<table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="3">
+		查看问题详情	</td>
+</tr>
+<tr>
+	<td class="print-spacer" colspan="6">
+		<hr size="1" width="100%" />
+	</td>
+</tr>
+<tr class="print-category">
+	<td class="print" width="16%">
+		编号:
+	</td>
+	<td class="print" width="16%">
+		分类:
+	</td>
+	<td class="print" width="16%">
+		严重性:
+	</td>
+	<td class="print" width="16%">
+		出现频率:
+	</td>
+	<td class="print" width="16%">
+		报告日期:
+	</td>
+	<td class="print" width="16%">
+		最后更新:
+	</td>
+</tr>
+<tr class="print">
+	<td class="print">
+		1	</td>
+	<td class="print">
+		[学籍管理系统] General	</td>
+	<td class="print">
+		很严重	</td>
+	<td class="print">
+		总是	</td>
+	<td class="print">
+		2017-12-27 02:41	</td>
+	<td class="print">
+		2017-12-27 02:52	</td>
+</tr>
+<tr>
+	<td class="print-spacer" colspan="6">
+		<hr size="1" width="100%" />
+	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		报告员:
+	</td>
+	<td class="print">
+		Test1	</td>
+	<td class="print-category">
+		平台:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		分派给:
+	</td>
+	<td class="print">
+		Dev1	</td>
+	<td class="print-category">
+		操作系统:
+	</td>
+	<td class="print">
+		win10	</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		优先级:
+	</td>
+	<td class="print">
+		中	</td>
+	<td class="print-category">
+		操作系统版本:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		状态:
+	</td>
+	<td class="print">
+		已解决	</td>
+	<td class="print-category">
+		产品版本:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		产品Build:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print-category">
+		处理状况:
+	</td>
+	<td class="print">
+		未处理	</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		处理方式:
+	</td>
+	<td class="print">
+		无	</td>
+	<td class="print-category">
+		&#160;
+	</td>
+	<td class="print">
+		&#160;
+	</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		估计完成时间:
+	</td>
+	<td class="print">
+		无	</td>
+	<td class="print-category">
+		修正版本:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+
+</tr>
+<tr class="print">
+	<td class="print-category">
+		&#160;
+	</td>
+	<td class="print">
+		&#160;
+	</td>
+	<td class="print-category">
+		目标版本:
+	</td>
+	<td class="print">
+			</td>
+	<td class="print" colspan="2">&#160;</td>
+</tr>
+<tr>
+	<td class="print-spacer" colspan="6">
+		<hr size="1" width="100%" />
+	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		摘要:
+	</td>
+	<td class="print" colspan="5">
+		无限年级升级	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		描述:
+	</td>
+	<td class="print" colspan="5">
+		预期结果	当达到毕业年级不应该升级<br />
+实际结果	升级成功<br />
+	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		问题重现步骤:
+	</td>
+	<td class="print" colspan="5">
+		1.运行该学籍管理软件<br />
+2.点击小学<br />
+3.选择学校四川宣化小学<br />
+4.选择学籍2013级<br />
+5.点击菜单栏学籍管理<br />
+6.年级升级<br />
+	</td>
+</tr>
+<tr class="print">
+	<td class="print-category">
+		附注:
+	</td>
+	<td class="print" colspan="5">
+			</td>
+</tr>
+<tr class="print">
+	<td class="print-category" valign="top">
+		附件:
+	</td>
+	<td class="print" colspan="5">
+			</td>
+</tr>
+<br />
+<table class="width100" cellspacing="1">
+<tr>
+	<td class="print" colspan="2">
+		这个问题没有注释信息	</td>
+</tr>
+
+</table>
+</table>
+
+
+<br /><br />

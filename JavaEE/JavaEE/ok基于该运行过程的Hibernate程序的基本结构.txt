@@ -1,0 +1,27 @@
+//（1）创建Configuration对象：对应 hibernate 的基本配置信息和对象关系映射信息
+Configuration configuration = new Configuration().configure();
+
+//（2）创建一个 ServiceRegistry 对象：hibernate 4.x 新添加的对象，hibernate的任何配置和服务都需要在该对象中注册后才能有效.
+ServiceRegistry serviceRegistry =
+    	new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
+
+//（3）创建SessionFactory对象
+SessionFactory sessionFactory = configuration.buildSessionFactory(serviceRegistry);
+
+//（4）创建一个 Session 对象
+Session session = sessionFactory.openSession();
+
+//（5）开启事务
+Transaction transaction = session.beginTransaction();
+
+//（6）执行保存操作——通过实体对象实现对数据库表的操作，是Hibernate框架的核心
+Book book=new Book();
+book.setBookId("123");
+book.setBookName("Java语言程序设计");
+session.save(book);//通过对象向数据库中的数据表存放信息
+
+//（7）提交事务 
+transaction.commit();
+
+//8).关闭 Session对象
+session.close();

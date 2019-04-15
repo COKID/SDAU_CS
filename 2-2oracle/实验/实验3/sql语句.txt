@@ -1,0 +1,43 @@
+SQL> create or replace procedure A20153546_1
+  2  (season in number)
+  3  as
+  4  BEGIN
+  5  if season<=3 THEN
+  6   dbms_output.put_line('春天');
+  7  ELSIF season<=6 THEN
+  8  dbms_output.put_line('夏天');
+  9  ELSIF season<=9 THEN
+ 10  dbms_output.put_line('秋天');
+ 11  ELSE
+ 12  dbms_output.put_line('冬天');
+ 13  END IF;
+ 14  END;
+ 15  /
+
+过程已创建。
+
+SQL> create or replace procedure A20153546_2
+  2  as
+  3   cursor mycur is
+  4   select * from emp where emp.sal<1800;
+  5  BEGIN
+  6  for info in mycur loop
+  7  update EMP SET SAL='1800' WHERE EMPNO=info.empno;
+  8  END LOOP;
+  9  END;
+ 10  /
+
+过程已创建。
+
+SQL> create or replace trigger A20153546_3
+  2  after update on DEPT
+  3  FOR EACH ROW
+  4  begin
+  5  update EMP set deptno= :new.deptno
+  6  where deptno= :old.deptno;
+  7  END;
+  8  /
+
+触发器已创建
+
+SQL> spool off

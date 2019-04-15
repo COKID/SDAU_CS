@@ -1,0 +1,2 @@
+screen=off
+resource=off &&关闭生成的foxuser.dbf和foxuser.fpt这两个文件

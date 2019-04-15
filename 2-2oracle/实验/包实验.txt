@@ -1,0 +1,46 @@
+SQL> create or replace package pack_one
+  2  as
+  3  cursor c_emp is select * from emp;
+  4  procedure displayemp;
+  5  end;
+  6  create or replace package body pack_one
+  7  as procedure diaplayemp
+  8  as v_emp emp%rowtype;
+  9  begin
+ 10  if not c_emp%isopen then
+ 11  open c_emp;
+ 12  end if;
+ 13  for i in 1..5 loop
+ 14  fetch c_emp into v_emp;
+ 15  dbms_output.put_line(v_emp.empno||' '|| v_emp.ename);
+ 16  end loop;
+ 17  end;
+ 18  /
+
+程序包已创建。
+
+SQL> create or replace package pkg_emp
+  2  as
+  3  function func_highsal(p_deptno emp.deptno%type) return emp.sal%type;
+  4  procedure proc_highsal(p_deptno emp.deptno%type);
+  5  end;//
+  6  create or replace package body pkg_emp
+  7  as function func_highsal(p_deptno emp.deptno%type)
+  8  return emp.sal%type
+  9  as v_highsal emp.sal%type;
+ 10  begin
+ 11  select max(sal) into v_highsal from emp where deptno=p_deptno;
+ 12  return v_highsal;
+ 13  end;
+ 14  procedure proc_highsal(p_deptno emp.deptno%type)
+ 15  as
+ 16  begin
+ 17  for v_emp in (select * from emp where deptno=p_deptno and sal=func_highsal(p_deptno))
+ 18  loop
+ 19  dbms_output.put_line(v_emp.empno||'  '||v_emp.ename);
+ 20  end loop;
+ 21  end;
+
+程序包已创建。
+
+SQL> spool off

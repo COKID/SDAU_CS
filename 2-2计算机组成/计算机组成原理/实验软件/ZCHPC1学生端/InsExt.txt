@@ -1,0 +1,43 @@
+;开发者:bluesky_bluesea@yeah.net。注意，本行须为第一行，不得修改和删除，否则本文件无效！
+;计算机组成原理实验系统电脑版 ZCHPC1
+;本文件是指令扩展文件
+;指令符号最长4位，机器码是二进制，类型是数字不能用字母。空格或TAB分隔，分号后是注释。
+
+;指令格式分下面几种，
+类型  格式               长度 分段
+;1    OP DR,SR           1字，2操作数
+;12   OP DR, [SR]        1字，2操作数 
+;13   OP [DR], SR        1字，2操作数
+;21   OP BYTE(PORT)      1字，1操作数
+;22   OP SR              1字，1操作数
+;23   OP DR              1字，1操作数
+;3    OP                 1字，0操作数
+;411  OP DR, DATA(16)    2字，2操作数
+;412  OP DR,[ADDR]       2字，2操作数
+;413  OP [ADDR],SR       2字，2操作数
+;42   OP DR, OFFSET[SR]  2字，2操作数
+;5    OP OFFSET          1字，1操作数
+;6    OP ADDR(16)        2字，1操作数
+
+;指令码	 机器码       类型       说明
+ADC	00100000	1	;ADC  DR，SR     
+SBB    	00100001	1	;SBB  DR，SR
+CALR    11100000	22	;CALR SR
+JMPR    01100000	22	;JMPR SR
+NOT     00101101	23 	;NOT  DR
+ASR     00101100	23	;ASR  DR
+RCL     00101010	23	;RCL  DR
+RCR     00101011	23	;RCR  DR
+CLC     01101100	3	;CLC
+STC     01101101	3	;STC
+EI      01101110	3	;EI
+DI      01101111	3	;DI
+IRET    11101111	3	;IRET
+LDRA    11100100	412	;LDRA DR，[ADR]         
+STRA    11100111	413	;STRA [ADR]，SR                         
+LDRX    11100101	42	;LDRX DR，OFFSET[SR]
+STRX    11100110	42      ;STRX DR，OFFSET[SR]	                    
+JRS     01100100	5	;JRS  OFFSET  JRS机器码 必须是xxxxxx00
+JRNS    01100101	5	;JRNS OFFSET  JRNS机器码必须是xxxxxx01
+
+

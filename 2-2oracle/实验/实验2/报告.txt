@@ -1,0 +1,554 @@
+SQL> select table_name from user_tables;
+
+TABLE_NAME                                                                      
+------------------------------                                                  
+SALGRADE                                                                        
+BONUS                                                                           
+EMP                                                                             
+DEPT                                                                            
+
+SQL> desc dept;
+ 名称                                      是否为空? 类型
+ ----------------------------------------- -------- ----------------------------
+ DEPTNO                                    NOT NULL NUMBER(2)
+ DNAME                                              VARCHAR2(14)
+ LOC                                                VARCHAR2(13)
+
+SQL> Select * from dept;
+
+    DEPTNO DNAME          LOC                                                   
+---------- -------------- -------------                                         
+        10 ACCOUNTING     NEW YORK                                              
+        20 RESEARCH       DALLAS                                                
+        30 SALES          CHICAGO                                               
+        40 OPERATIONS     BOSTON                                                
+
+SQL> desc emp;
+ 名称                                      是否为空? 类型
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                     NOT NULL NUMBER(4)
+ ENAME                                              VARCHAR2(10)
+ JOB                                                VARCHAR2(9)
+ MGR                                                NUMBER(4)
+ HIREDATE                                           DATE
+ SAL                                                NUMBER(7,2)
+ COMM                                               NUMBER(7,2)
+ DEPTNO                                             NUMBER(2)
+
+SQL> select * from emp;
+
+     EMPNO ENAME      JOB              MGR HIREDATE              SAL       COMM 
+---------- ---------- --------- ---------- -------------- ---------- ---------- 
+    DEPTNO                                                                      
+----------                                                                      
+      7369 SMITH      CLERK           7902 17-12月-80            800            
+        20                                                                      
+                                                                                
+      7499 ALLEN      SALESMAN        7698 20-2月 -81           1600        300 
+        30                                                                      
+                                                                                
+      7521 WARD       SALESMAN        7698 22-2月 -81           1250        500 
+        30                                                                      
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE              SAL       COMM 
+---------- ---------- --------- ---------- -------------- ---------- ---------- 
+    DEPTNO                                                                      
+----------                                                                      
+      7566 JONES      MANAGER         7839 02-4月 -81           2975            
+        20                                                                      
+                                                                                
+      7654 MARTIN     SALESMAN        7698 28-9月 -81           1250       1400 
+        30                                                                      
+                                                                                
+      7698 BLAKE      MANAGER         7839 01-5月 -81           2850            
+        30                                                                      
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE              SAL       COMM 
+---------- ---------- --------- ---------- -------------- ---------- ---------- 
+    DEPTNO                                                                      
+----------                                                                      
+      7782 CLARK      MANAGER         7839 09-6月 -81           2450            
+        10                                                                      
+                                                                                
+      7788 SCOTT      ANALYST         7566 19-4月 -87           3000            
+        20                                                                      
+                                                                                
+      7839 KING       PRESIDENT            17-11月-81           5000            
+        10                                                                      
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE              SAL       COMM 
+---------- ---------- --------- ---------- -------------- ---------- ---------- 
+    DEPTNO                                                                      
+----------                                                                      
+      7844 TURNER     SALESMAN        7698 08-9月 -81           1500          0 
+        30                                                                      
+                                                                                
+      7876 ADAMS      CLERK           7788 23-5月 -87           1100            
+        20                                                                      
+                                                                                
+      7900 JAMES      CLERK           7698 03-12月-81            950            
+        30                                                                      
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE              SAL       COMM 
+---------- ---------- --------- ---------- -------------- ---------- ---------- 
+    DEPTNO                                                                      
+----------                                                                      
+      7902 FORD       ANALYST         7566 03-12月-81           3000            
+        20                                                                      
+                                                                                
+      7934 MILLER     CLERK           7782 23-1月 -82           1300            
+        10                                                                      
+                                                                                
+
+已选择14行。
+
+SQL> desc salgrade;
+ 名称                                      是否为空? 类型
+ ----------------------------------------- -------- ----------------------------
+ GRADE                                              NUMBER
+ LOSAL                                              NUMBER
+ HISAL                                              NUMBER
+
+SQL> select * from salgrade;
+
+     GRADE      LOSAL      HISAL                                                
+---------- ---------- ----------                                                
+         1        700       1200                                                
+         2       1201       1400                                                
+         3       1401       2000                                                
+         4       2001       3000                                                
+         5       3001       9999                                                
+
+SQL> desc bonus;
+ 名称                                      是否为空? 类型
+ ----------------------------------------- -------- ----------------------------
+ ENAME                                              VARCHAR2(10)
+ JOB                                                VARCHAR2(9)
+ SAL                                                NUMBER
+ COMM                                               NUMBER
+
+SQL> select * from bonus;
+
+未选定行
+
+SQL> select * from dept;
+
+    DEPTNO DNAME          LOC                                                   
+---------- -------------- -------------                                         
+        10 ACCOUNTING     NEW YORK                                              
+        20 RESEARCH       DALLAS                                                
+        30 SALES          CHICAGO                                               
+        40 OPERATIONS     BOSTON                                                
+
+SQL> select DEPTNO,DNAME from dept;
+
+    DEPTNO DNAME                                                                
+---------- --------------                                                       
+        10 ACCOUNTING                                                           
+        20 RESEARCH                                                             
+        30 SALES                                                                
+        40 OPERATIONS                                                           
+
+SQL> select ENAME,SAL from EMP where DEPTNO='10';
+
+ENAME             SAL                                                           
+---------- ----------                                                           
+CLARK            2450                                                           
+KING             5000                                                           
+MILLER           1300                                                           
+
+SQL> select ENAME,SAL from EMP where JOB='CLERK' OR JOB='MANAGER';
+
+ENAME             SAL                                                           
+---------- ----------                                                           
+SMITH             800                                                           
+JONES            2975                                                           
+BLAKE            2850                                                           
+CLARK            2450                                                           
+ADAMS            1100                                                           
+JAMES             950                                                           
+MILLER           1300                                                           
+
+已选择7行。
+
+SQL> select ENAME,DEPTNO,SAL,JOB from EMP where DEPTNO>=10 AND DEPT<=30;
+select ENAME,DEPTNO,SAL,JOB from EMP where DEPTNO>=10 AND DEPT<=30
+                                                          *
+第 1 行出现错误: 
+ORA-00904: "DEPT": 标识符无效 
+
+
+SQL> select ENAME,DEPTNO,SAL,JOB from EMP where DEPTNO>=10 AND DEPTNO<=30;
+
+ENAME          DEPTNO        SAL JOB                                            
+---------- ---------- ---------- ---------                                      
+SMITH              20        800 CLERK                                          
+ALLEN              30       1600 SALESMAN                                       
+WARD               30       1250 SALESMAN                                       
+JONES              20       2975 MANAGER                                        
+MARTIN             30       1250 SALESMAN                                       
+BLAKE              30       2850 MANAGER                                        
+CLARK              10       2450 MANAGER                                        
+SCOTT              20       3000 ANALYST                                        
+KING               10       5000 PRESIDENT                                      
+TURNER             30       1500 SALESMAN                                       
+ADAMS              20       1100 CLERK                                          
+
+ENAME          DEPTNO        SAL JOB                                            
+---------- ---------- ---------- ---------                                      
+JAMES              30        950 CLERK                                          
+FORD               20       3000 ANALYST                                        
+MILLER             10       1300 CLERK                                          
+
+已选择14行。
+
+SQL> select ENAME,SAL,JOB from EMP where ENAME LIKE 'J%';
+
+ENAME             SAL JOB                                                       
+---------- ---------- ---------                                                 
+JONES            2975 MANAGER                                                   
+JAMES             950 CLERK                                                     
+
+SQL> select ENAME,JOB,SAL from EMP where SAL<2000 ORDER BY SAL DESC;
+
+ENAME      JOB              SAL                                                 
+---------- --------- ----------                                                 
+ALLEN      SALESMAN        1600                                                 
+TURNER     SALESMAN        1500                                                 
+MILLER     CLERK           1300                                                 
+WARD       SALESMAN        1250                                                 
+MARTIN     SALESMAN        1250                                                 
+ADAMS      CLERK           1100                                                 
+JAMES      CLERK            950                                                 
+SMITH      CLERK            800                                                 
+
+已选择8行。
+
+
+SQL> select ENAME,SAL,DEPTNO,DNAME,LOC FROM EMP,DEPT WHERE EMP.JOB='CLERK';
+select ENAME,SAL,DEPTNO,DNAME,LOC FROM EMP,DEPT WHERE EMP.JOB='CLERK'
+                 *
+第 1 行出现错误: 
+ORA-00918: 未明确定义列 
+
+
+SQL> select ENAME,SAL,EMP.DEPTNO,DNAME,LOC FROM EMP,DEPT WHERE EMP.JOB='CLERK' AND DEPT.DEPTNO=EMP.DEPTNO;
+
+ENAME             SAL     DEPTNO DNAME          LOC                             
+---------- ---------- ---------- -------------- -------------                   
+MILLER           1300         10 ACCOUNTING     NEW YORK                        
+ADAMS            1100         20 RESEARCH       DALLAS                          
+SMITH             800         20 RESEARCH       DALLAS                          
+JAMES             950         30 SALES          CHICAGO                         
+
+SQL> select a.ENAME,b.ENAME from emp a,emp b where a.EMPNO=b.EMPNO and a.SAL>=2000 AND b.JOB='MANAGER';
+
+ENAME      ENAME                                                                
+---------- ----------                                                           
+JONES      JONES                                                                
+BLAKE      BLAKE                                                                
+CLARK      CLARK                                                                
+
+SQL> select a.ENAME,b.ENAME from emp a,emp b where a.EMPNO=b.EMPNO and a.SAL>=2000
+  2  ;
+
+ENAME      ENAME                                                                
+---------- ----------                                                           
+JONES      JONES                                                                
+BLAKE      BLAKE                                                                
+CLARK      CLARK                                                                
+SCOTT      SCOTT                                                                
+KING       KING                                                                 
+FORD       FORD                                                                 
+
+已选择6行。
+
+SQL> select a.ename,b.mgr from emp a,emp b where a.mgr=b.empno and a.sal>2000
+  2  ;
+
+ENAME             MGR                                                           
+---------- ----------                                                           
+FORD             7839                                                           
+SCOTT            7839                                                           
+CLARK                                                                           
+BLAKE                                                                           
+JONES                                                                           
+
+SQL> select e.ename as "雇员姓名", b.ename as "经理" from emp e join emp b on e.mgr=b.empno where e.sal>=2000;
+
+雇员姓名   经理                                                                 
+---------- ----------                                                           
+FORD       JONES                                                                
+SCOTT      JONES                                                                
+CLARK      KING                                                                 
+BLAKE      KING                                                                 
+JONES      KING                                                                 
+
+SQL> select ENAME,JOB,SAL FROM EMP WHERE SAL>(SELECT SAL FROM EMP WHERE ENAME='JONES';)
+  2  ;
+select ENAME,JOB,SAL FROM EMP WHERE SAL>(SELECT SAL FROM EMP WHERE ENAME='JONES';)
+                                                                                *
+第 1 行出现错误: 
+ORA-00911: 无效字符 
+
+
+SQL> select ENAME,JOB,SAL FROM EMP WHERE SAL>(SELECT SAL FROM EMP WHERE ENAME='JONES');
+
+ENAME      JOB              SAL                                                 
+---------- --------- ----------                                                 
+SCOTT      ANALYST         3000                                                 
+KING       PRESIDENT       5000                                                 
+FORD       ANALYST         3000                                                 
+
+SQL> select ENAME,JOB,DEPTNO from emp where deptno not in (select deptno from dept);
+
+未选定行
+
+SQL> SELECT * FROM EMP WHERE DEPTNO IN(SELECT DEPTNO FROM EMP WHERE SAL>=1000 AND SAL<=3000);
+
+     EMPNO ENAME      JOB              MGR HIREDATE              SAL       COMM 
+---------- ---------- --------- ---------- -------------- ---------- ---------- 
+    DEPTNO                                                                      
+----------                                                                      
+      7900 JAMES      CLERK           7698 03-12月-81            950            
+        30                                                                      
+                                                                                
+      7844 TURNER     SALESMAN        7698 08-9月 -81           1500          0 
+        30                                                                      
+                                                                                
+      7698 BLAKE      MANAGER         7839 01-5月 -81           2850            
+        30                                                                      
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE              SAL       COMM 
+---------- ---------- --------- ---------- -------------- ---------- ---------- 
+    DEPTNO                                                                      
+----------                                                                      
+      7654 MARTIN     SALESMAN        7698 28-9月 -81           1250       1400 
+        30                                                                      
+                                                                                
+      7521 WARD       SALESMAN        7698 22-2月 -81           1250        500 
+        30                                                                      
+                                                                                
+      7499 ALLEN      SALESMAN        7698 20-2月 -81           1600        300 
+        30                                                                      
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE              SAL       COMM 
+---------- ---------- --------- ---------- -------------- ---------- ---------- 
+    DEPTNO                                                                      
+----------                                                                      
+      7902 FORD       ANALYST         7566 03-12月-81           3000            
+        20                                                                      
+                                                                                
+      7876 ADAMS      CLERK           7788 23-5月 -87           1100            
+        20                                                                      
+                                                                                
+      7788 SCOTT      ANALYST         7566 19-4月 -87           3000            
+        20                                                                      
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE              SAL       COMM 
+---------- ---------- --------- ---------- -------------- ---------- ---------- 
+    DEPTNO                                                                      
+----------                                                                      
+      7566 JONES      MANAGER         7839 02-4月 -81           2975            
+        20                                                                      
+                                                                                
+      7369 SMITH      CLERK           7902 17-12月-80            800            
+        20                                                                      
+                                                                                
+      7934 MILLER     CLERK           7782 23-1月 -82           1300            
+        10                                                                      
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE              SAL       COMM 
+---------- ---------- --------- ---------- -------------- ---------- ---------- 
+    DEPTNO                                                                      
+----------                                                                      
+      7839 KING       PRESIDENT            17-11月-81           5000            
+        10                                                                      
+                                                                                
+      7782 CLARK      MANAGER         7839 09-6月 -81           2450            
+        10                                                                      
+                                                                                
+
+已选择14行。
+
+SQL> SELECT ENAME FROM EMP WHERE SAL=(MAX(SAL) FROM EMP);
+SELECT ENAME FROM EMP WHERE SAL=(MAX(SAL) FROM EMP)
+                                 *
+第 1 行出现错误: 
+ORA-00934: 此处不允许使用分组函数 
+
+
+SQL> SELECT ENAME FROM EMP WHERE SAL=(SELECT MAX(SAL) FROM EMP);
+
+ENAME                                                                           
+----------                                                                      
+KING                                                                            
+
+SQL> SELECT EMPNO,ENAME,SAL
+  2  FROM (SELECT EMPNO,ENAME,SAL FROM EMP WHERE SAL<(SELECT MAX(SAL) FROM EMP))
+  3  WHERE SAL>=ALL(SELECT SAL FROM EMPWHERE SAL<(SELECT MAX(SAL) FROM EMP));
+WHERE SAL>=ALL(SELECT SAL FROM EMPWHERE SAL<(SELECT MAX(SAL) FROM EMP))
+                                           *
+第 3 行出现错误: 
+ORA-00907: 缺失右括号 
+
+
+SQL> SELECT EMPNO,ENAME,SAL
+  2  FROM (SELECT EMPNO,ENAME,SAL FROM EMP WHERE SAL<(SELECT MAX(SAL) FROM EMP))
+  3  WHERE SAL>=ALL(SELECT SAL FROM EMP WHERE SAL<(SELECT MAX(SAL) FROM EMP));
+
+     EMPNO ENAME             SAL                                                
+---------- ---------- ----------                                                
+      7788 SCOTT            3000                                                
+      7902 FORD             3000                                                
+
+SQL> select ename,sal+nvl(comm,0) salary from emp;
+
+ENAME          SALARY                                                           
+---------- ----------                                                           
+SMITH             800                                                           
+ALLEN            1900                                                           
+WARD             1750                                                           
+JONES            2975                                                           
+MARTIN           2650                                                           
+BLAKE            2850                                                           
+CLARK            2450                                                           
+SCOTT            3000                                                           
+KING             5000                                                           
+TURNER           1500                                                           
+ADAMS            1100                                                           
+
+ENAME          SALARY                                                           
+---------- ----------                                                           
+JAMES             950                                                           
+FORD             3000                                                           
+MILLER           1300                                                           
+
+已选择14行。
+
+SQL> select e.ename, e.sal, d.dname from emp e join dept d on e.deptno=d.deptno where hiredate < to_date('1981-07-01', 'yyyy-mm-dd');
+
+ENAME             SAL DNAME                                                     
+---------- ---------- --------------                                            
+SMITH             800 RESEARCH                                                  
+ALLEN            1600 SALES                                                     
+WARD             1250 SALES                                                     
+JONES            2975 RESEARCH                                                  
+BLAKE            2850 SALES                                                     
+CLARK            2450 ACCOUNTING                                                
+
+已选择6行。
+
+SQL> select deptno, count(1) "员工人数" from emp where hiredate>to_date('1981-01-01', 'yyyy-mm-dd') group by deptno;
+
+    DEPTNO   员工人数                                                           
+---------- ----------                                                           
+        30          6                                                           
+        20          4                                                           
+        10          3                                                           
+
+SQL> select e.ename, e.sal from emp e join dept d on e.deptno=d.deptno where d.loc='CHICAGO';
+
+ENAME             SAL                                                           
+---------- ----------                                                           
+WARD             1250                                                           
+TURNER           1500                                                           
+ALLEN            1600                                                           
+JAMES             950                                                           
+BLAKE            2850                                                           
+MARTIN           1250                                                           
+
+已选择6行。
+
+SQL> select e.ename, e.sal from emp e join dept d on e.deptno=d.deptno where d.loc='CHICAGO';
+
+ENAME             SAL                                                           
+---------- ----------                                                           
+WARD             1250                                                           
+TURNER           1500                                                           
+ALLEN            1600                                                           
+JAMES             950                                                           
+BLAKE            2850                                                           
+MARTIN           1250                                                           
+
+已选择6行。
+
+SQL> select sum(sal+nvl(comm,0)) "总收入" from emp where to_char(hiredate, 'yyyy)='1981';
+ERROR:
+ORA-01756: 引号内的字符串没有正确结束 
+
+
+SQL> select sum(sal+nvl(comm,0)) "总收入" from emp where to_char(hiredate, 'yyyy')='1981';
+
+    总收入                                                                      
+----------                                                                      
+     25025                                                                      
+
+SQL> select d.loc, count(1) "录用人数" from emp e join dept d on e.deptno=d.deptno group by to_char(hiredate,'yyyy'), to_char(hiredate,'mm');
+select d.loc, count(1) "录用人数" from emp e join dept d on e.deptno=d.deptno group by to_char(hiredate,'yyyy'), to_char(hiredate,'mm')
+       *
+第 1 行出现错误: 
+ORA-00979: 不是 GROUP BY 表达式 
+
+
+SQL> select ename, to_char(hiredate, 'yyyy-mm-dd hh:mi:ss') from emp;
+
+ENAME      TO_CHAR(HIREDATE,'Y                                                  
+---------- -------------------                                                  
+SMITH      1980-12-17 12:00:00                                                  
+ALLEN      1981-02-20 12:00:00                                                  
+WARD       1981-02-22 12:00:00                                                  
+JONES      1981-04-02 12:00:00                                                  
+MARTIN     1981-09-28 12:00:00                                                  
+BLAKE      1981-05-01 12:00:00                                                  
+CLARK      1981-06-09 12:00:00                                                  
+SCOTT      1987-04-19 12:00:00                                                  
+KING       1981-11-17 12:00:00                                                  
+TURNER     1981-09-08 12:00:00                                                  
+ADAMS      1987-05-23 12:00:00                                                  
+
+ENAME      TO_CHAR(HIREDATE,'Y                                                  
+---------- -------------------                                                  
+JAMES      1981-12-03 12:00:00                                                  
+FORD       1981-12-03 12:00:00                                                  
+MILLER     1982-01-23 12:00:00                                                  
+
+已选择14行。
+
+SQL> select d.loc, count(1) "录用人数" from emp e join dept d on e.deptno=d.deptno group by to_char(hiredate,'yyyy'), to_char(hiredate,'mm');
+select d.loc, count(1) "录用人数" from emp e join dept d on e.deptno=d.deptno group by to_char(hiredate,'yyyy'), to_char(hiredate,'mm')
+       *
+第 1 行出现错误: 
+ORA-00979: 不是 GROUP BY 表达式 
+
+
+SQL> select d.loc, count(1) "录用人数" from emp e join dept d on e.deptno=d.deptno group by (to_char(hiredate,'yyyy'), to_char(hiredate,'mm'));
+select d.loc, count(1) "录用人数" from emp e join dept d on e.deptno=d.deptno group by (to_char(hiredate,'yyyy'), to_char(hiredate,'mm'))
+       *
+第 1 行出现错误: 
+ORA-00979: 不是 GROUP BY 表达式 
+
+
+SQL> select d.deptno, d.dname, e.ename from dept d join emp e on d.deptno=e.deptno where e.job='MANAGER';
+
+    DEPTNO DNAME          ENAME                                                 
+---------- -------------- ----------                                            
+        10 ACCOUNTING     CLARK                                                 
+        20 RESEARCH       JONES                                                 
+        30 SALES          BLAKE                                                 
+
+SQL> select dname from dept where deptno =(select deptno from emp group by deptno having avg(sal) = (select max(avg(sal)) from emp group by deptno));
+
+DNAME                                                                           
+--------------                                                                  
+ACCOUNTING                                                                      
+
+SQL> spool off;

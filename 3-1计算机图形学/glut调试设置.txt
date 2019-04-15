@@ -1,0 +1,13 @@
+下载GLUT工具包，然后如下：
+1、将下载的压缩包解开，将得到5个文件
+2、把解压得到的glut.h放到C:/Program Files/Microsoft Visual Studio 9.0/VC/include这个文件夹。
+3、把解压得到的glut.lib和glut32.lib放到静态函数库所在C:/Program Files/Microsoft Visual Studio 9.0/VC/lib文件夹。
+
+4、把解压得到的glut.dll和glut32.dll放到操作系统目录下面的system32文件夹内。
+
+5、再次运行，如果还是出错，那么就更改头文件原有的名称#include <GL/glut.h>为#include <glut.h>
+
+6、此时运行便能成功
+
+
+opengl32.lib glut32.lib glu32.lib glaux.lib

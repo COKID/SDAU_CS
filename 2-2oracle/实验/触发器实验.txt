@@ -1,0 +1,56 @@
+SQL> create or replace trigger trg_emp after
+  2  insert or update or delete  on emp
+  3  declare
+  4  v_sal emp.sal%type;
+  5  v_count number;
+  6  begin
+  7  select avg(sal),count(*) into v_sal,v_count from emp;
+  8  dbms_output.put_line(v_sal||' '||v_count);
+  9  end;
+ 10  update emp set sal=500 where empno=7844;
+ 11  /
+
+警告: 创建的触发器带有编译错误。
+
+SQL> create or replace trigger trg_emp after
+  2  insert or update or delete  on emp
+  3  declare
+  4  v_sal emp.sal%type;
+  5  v_count number;
+  6  begin
+  7  select avg(sal),count(*) into v_sal,v_count from emp;
+  8  dbms_output.put_line(v_sal||' '||v_count);
+  9  end;
+ 10  /
+
+触发器已创建
+
+SQL> 
+SQL> create or replace package pkg_deptno
+  2  as
+  3  v_deptno emp.deptno%type;
+  4  v_sal  emp.sal%type;
+  5  end;
+  6  //
+  7  create or replace trigger trg_updateemp
+  8  before update on emp for each row
+  9  begin
+ 10  pkg_deptno.v_sal:=:new.sal;
+ 11  pkg_deptno.v_deptno:=:new.deptno;
+ 12  end;
+ 13  //
+ 14  create or replace trigger trg_statement after update on emp declare
+ 15  v_highsal emp.sal%type;
+ 16  v_lowsal emp.sal%type;
+ 17  begin
+ 18  select max(sal),min(sal) into v_highsal,v_lowsal from emp where deptno= pkg_deptno.v_deptno;
+ 19  if pkg_deptno.v_sal>v_highsal or pkg_deptno.v_sal<v_lowsal
+ 20  then
+ 21  raise_application_error(-20001,'the sal is beyond!');
+ 22  end if;
+ 23  end;
+ 24  /
+
+触发器已创建
+
+SQL> spool off

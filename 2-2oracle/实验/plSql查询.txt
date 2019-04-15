@@ -1,0 +1,81 @@
+SQL> begin
+  2  for v_emp in(select * from emp)
+  3  loop
+  4  DBMS_OUTPUT.PUT_LINE(v_emp.ename||' '||v_emp.empno||' '||v_emp.sal||' '||v_emp.deptno);
+  5  end loop;
+  6  end;
+  7  /
+SMITH 7369 800 20                                                               
+ALLEN 7499 1600 30                                                              
+WARD 7521 1250 30                                                               
+JONES 7566 2975 20                                                              
+MARTIN 7654 1250 30                                                             
+BLAKE 7698 2850 30                                                              
+CLARK 7782 2450 10                                                              
+SCOTT 7788 3000 20                                                              
+KING 7839 5000 10                                                               
+TURNER 7844 1500 30                                                             
+ADAMS 7876 1100 20                                                              
+JAMES 7900 950 30                                                               
+FORD 7902 3000 20                                                               
+MILLER 7934 1300 10                                                             
+
+PL/SQL 过程已成功完成。
+
+SQL> declare
+  2  v_empno emp.empno%type;
+  3  v_sal emp.sal%type;
+  4  v_deptno emp.deptno%type;
+  5  begin
+  6  select empno,sal,deptno into v_empno,v_sal,v_deptno
+  7  from emp
+  8  where ename='SMITH';
+  9  DBMS_OUTPUT.PUT_LINE(v_empno||' '||v_sal||' 'v_deptno);
+ 10  exception
+ 11  when NO_DATA_FOUND THEN
+ 12  insert into EMP(empno,ename,sal,deptno)
+ 13  values(2007,'SMITH',1500,10);
+ 14  when TOO_MANY_ROWS THEN
+ 15  for v_emp in(select empno,sal,deptno from emp where ename='SMITH')
+ 16  loop
+ 17  DBMS_OUTPUT.PUT_LINE(v_emp.empno||' '||v_emp.sal||' '||v_emp.deptno);
+ 18  end loop;
+ 19  end;
+ 20  /
+DBMS_OUTPUT.PUT_LINE(v_empno||' '||v_sal||' 'v_deptno);
+                                             *
+第 9 行出现错误: 
+ORA-06550: 第 9 行, 第 46 列: 
+PLS-00103: 出现符号 "V_DEPTNO"在需要下列之一时： 
+) , * & = - + < / > at 
+in is mod remainder not rem => <an exponent (**)> 
+<> or != or ~= >= <= <> and or like like2 like4 likec as 
+between from using || member submultiset
+符号 "," 被替换为 "V_DEPTNO" 后继续。 
+
+
+SQL> declare
+  2  v_empno emp.empno%type;
+  3  v_sal emp.sal%type;
+  4  v_deptno emp.deptno%type;
+  5  begin
+  6  select empno,sal,deptno into v_empno,v_sal,v_deptno
+  7  from emp
+  8  where ename='SMITH';
+  9  DBMS_OUTPUT.PUT_LINE(v_empno||' '||v_sal||' '||v_deptno);
+ 10  exception
+ 11  when NO_DATA_FOUND THEN
+ 12  insert into EMP(empno,ename,sal,deptno)
+ 13  values(2007,'SMITH',1500,10);
+ 14  when TOO_MANY_ROWS THEN
+ 15  for v_emp in(select empno,sal,deptno from emp where ename='SMITH')
+ 16  loop
+ 17  DBMS_OUTPUT.PUT_LINE(v_emp.empno||' '||v_emp.sal||' '||v_emp.deptno);
+ 18  end loop;
+ 19  end;
+ 20  /
+7369 800 20                                                                     
+
+PL/SQL 过程已成功完成。
+
+SQL> spool off

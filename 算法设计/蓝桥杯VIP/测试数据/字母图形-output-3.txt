@@ -1,0 +1,6 @@
+AB
+BA
+CB
+DC
+ED
+FE
